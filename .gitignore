@@ -36,3 +36,6 @@ next-env.d.ts
 
 # large assets
 /public/cube
+
+# work-in progress
+wip.md
