@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yugioh Drafting Web App
 
-## Getting Started
+The goal of this app is create a website to easily draft Yugioh cards in an online interface. If you're unfamilar with Yugioh, it's card game such as Magic the Gathering. Drafting is is performed by players selecting from a group of cards to build a custom deck of cards. An explaination can also be found here"
 
-First, run the development server:
+https://boardgamingparent.com/explainer-what-is-a-card-drafting-game/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## What problem does this solve?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+There is not a good interface for drafting Yugioh online, and I'd like create it. Yugioh is a hobby I've had off and on for almost 20 years, so this would be primary a passion project of mine.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I realize I did mention two other projects, the e-commerence website and business website for air conditioning, but this is the first project I'd like to complete, as contains the most amount of unfamiliar dependencies, and it captures the most of my motivation. My goal is complete all three, and present them on my website as a project portfolio for Front-End Development recruiters.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Goals
 
-## Learn More
+- Players can create a room at a custom URL to host a game
+- Other players, up to 4 total, can be in a room at a time to play
+- Accounts can be optionally made to use the website and play
+- Game results are stored on a player's account
 
-To learn more about Next.js, take a look at the following resources:
+## Technical breakdown
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The tech stack will be Next.js 13, TypeScript, Vanilla CSS, Pusher, MongoDB, and NextAuth. Vercel will be used as the hosting service. I also will be using NameCheap as my domain service.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The current iteration of this project works as a barebones random iterator of images in the public folder. This functionality will be extended with Pusher to create multiplayer behavior with web sockets.
